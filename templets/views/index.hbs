@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>WEATHER</title>
+         <link rel="icon" href="/img/weather.png">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <p>weather app</p>
+
+            <form action="">
+                <input placeholder="location">
+                <button>Fetch Forecast</button>
+            </form>
+
+            <p id="msg1"></p>
+            <p id="msg2"></p>
+        </div>
+        
+         {{>footer}}
+        <script src="./js/app.js"></script>
+    </body>
+</html>
