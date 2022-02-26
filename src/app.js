@@ -9,6 +9,8 @@ console.log(path.join(__dirname,"../public"))
  */
 const app = express()
 
+const port = process.env.PORT || 3000
+
 const publicDirPath = path.join(__dirname,"../public")
 const viewsPath = path.join(__dirname,"../templets/views")
 const partialsPath = path.join(__dirname,"../templets/partials")
@@ -89,6 +91,6 @@ res.render("error404",{
 })
 })
 
-app.listen(3000,()=>{
-    console.log('up n running')
+app.listen(port,()=>{
+    console.log('up n running at'+port)
 })
